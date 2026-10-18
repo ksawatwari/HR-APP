@@ -81,6 +81,7 @@ export interface LeaveRequest {
 
 export interface ApprovalItem {
   id: string; kind: 'OT' | 'ค่าใช้จ่าย' | 'ลา'; employeeId: string; title: string; detail: string; amount?: number; status: RequestStatus; refId?: string;
+  ot?: { hours: number; rate: 1.5 | 2 | 3 };
 }
 
 export type CandidateStage = 'สมัครใหม่' | 'คัดกรอง' | 'สัมภาษณ์' | 'เสนอเงินเดือน' | 'รับเข้าทำงาน';
