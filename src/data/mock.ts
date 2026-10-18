@@ -87,9 +87,9 @@ export const initialLeaves: LeaveRequest[] = [
 export const leaveBalances = { ลาพักร้อน: 10, ลาป่วย: 30, ลากิจ: 6, ลาคลอด: 98 } as const;
 
 export const initialApprovals: ApprovalItem[] = [
-  { id: 'A001', kind: 'OT', employeeId: 'E004', title: 'ขอทำ OT ปิดดีลลูกค้า', detail: '15 ต.ค. 18:00–21:00 (3 ชม. × 1.5)', amount: 3 * 1.5 * (38000 / 240), status: 'รออนุมัติ' },
+  { id: 'A001', kind: 'OT', employeeId: 'E004', title: 'ขอทำ OT ปิดดีลลูกค้า', detail: '15 ต.ค. 18:00–21:00 (3 ชม. × 1.5)', amount: 3 * 1.5 * (38000 / 240), status: 'รออนุมัติ', ot: { hours: 3, rate: 1.5 } },
   { id: 'A002', kind: 'ค่าใช้จ่าย', employeeId: 'E006', title: 'ค่าเดินทางพบลูกค้า จ.ชลบุรี', detail: 'ค่าน้ำมัน + ทางด่วน 14 ต.ค.', amount: 1280, status: 'รออนุมัติ' },
-  { id: 'A003', kind: 'OT', employeeId: 'E005', title: 'ขอทำ OT เตรียมข้อเสนอประมูล', detail: '17 ต.ค. (เสาร์) 09:00–13:00 (4 ชม. × 2)', amount: 4 * 2 * (28000 / 240), status: 'รออนุมัติ' },
+  { id: 'A003', kind: 'OT', employeeId: 'E005', title: 'ขอทำ OT เตรียมข้อเสนอประมูล', detail: '17 ต.ค. (เสาร์) 09:00–13:00 (4 ชม. × 2)', amount: 4 * 2 * (28000 / 240), status: 'รออนุมัติ', ot: { hours: 4, rate: 2 } },
   { id: 'A004', kind: 'ค่าใช้จ่าย', employeeId: 'E004', title: 'ค่ารับรองลูกค้า', detail: 'มื้อกลางวัน 4 ท่าน ร้านอาหารไทย', amount: 2450, status: 'รออนุมัติ' },
 ];
 
